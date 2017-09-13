@@ -1,5 +1,6 @@
-Welcome to the NestEgg Drone Share experiment!
-====================
+Welcome to the NestEgg Drone Share Experiment!
+
+
 What is NestEgg? We’re an experiment discovering how to collectivize ownership in value producing infrastructure, to enable anyone to secure their future with the basic services they need. 
 
 Achieving this end-vision requires three components:
@@ -12,20 +13,20 @@ This Drone Share experiment is designed to explore these first two components by
 * and develop strategies that maximize the potential of crowdfunding and incentivizing community participation in the infrastructure they share.
 
 
->Credits:
->
->	Demo Images:
->		Unsplash (unsplash.com)
->
->	Icons:
->		Font Awesome (fortawesome.github.com/Font-Awesome)
->
->	Other:
->		jQuery (jquery.com)
->		Misc. Sass functions (@HugoGiraudel)
->		Skel (skel.io)
->
->	Theme:
->		Dimension by HTML5 UP
->		html5up.net | @ajlkn
->		Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
+
+	Other:
+		jQuery (jquery.com)
+		Misc. Sass functions (@HugoGiraudel)
+		Skel (skel.io)
+
+	Theme:
+		Dimension by HTML5 UP
+		html5up.net | @ajlkn
+		Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
