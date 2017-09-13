@@ -9,6 +9,7 @@ Achieving this end-vision requires three components:
 * Distributing the utility created by the asset.
 
 This Drone Share experiment is designed to explore these first two components by crowdfunding a fleet of drones to be shared amongst a small group of participants. Through this small sandbox, NestEgg will be able to better understand the complexities behind our product and iterate towards a better user experience. We will host this sandbox within the Brightlands Smart Services Campus, and with your help, by the end of this Drone Share, we hope to understand better how to:
+s
 * help future infrastructure providers manage a group of shareholders (instead of customers) 
 * and develop strategies that maximize the potential of crowdfunding and incentivizing community participation in the infrastructure they share.
 
