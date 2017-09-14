@@ -13,6 +13,11 @@
 
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#form {
+			display:none;
+			};
+		</style>
 	</head>
 	<body>
 
@@ -37,7 +42,7 @@
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#work">Join</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#about">Reserve</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -75,11 +80,22 @@
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h2 class="major">Reserve to use your Drone</h2>
+								<p>As collective owners of a fleet of drones, there are more owners than drones available to rent. Yet, like most things we own, we only use our commodities a small amount of the time. Thus, make a reservation ahead of time when you want to use a drone.</p>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+								<iframe class="airtable-embed" src="https://airtable.com/embed/shrjjB7vh15xFpUSD?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+								<div align="right">
+								<button id="formButton" align="right" class="button special">Make a Reservation</a> <br>
+								</div>
+								<div align="center" id="form"><iframe class="airtable-embed" src="https://airtable.com/embed/shrI3Rc3gyyutBcZp?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+								<div align="right"><button id="close" align="right" class="button">Close Window</a></div>
 
-								<iframe class="airtable-embed" src="https://airtable.com/embed/shrhKk5MkBnwN16Ik?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+								</div>
+								<br><br>
+								<p>*<i>There is a maximum of 5 drones to rent each day. If there are 5 reservations for a day, then that day is full</i></p>
+
+
+
 							</article>
 
 						<!-- Contact -->
@@ -372,6 +388,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#formButton").click(function() {
+						$("#formButton").hide();
+						$("#form").show();
+					});
+
+					$("#close").click(function() {
+						$("#form").hide();
+						$("#formButton").show();
+					});
+				});
+			</script>
 
 	</body>
 </html>
