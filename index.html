@@ -16,6 +16,10 @@
 		<style>
 			#form {
 			display:none;
+			}
+
+			#form2 {
+			display:none;
 			};
 		</style>
 	</head>
@@ -41,7 +45,7 @@
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Join</a></li>
+								<li><a href="#join">Join</a></li>
 								<li><a href="#about">Reserve</a></li>
 								<li><a href="#rules">Rules</a></li>
 								<!-- <li><a href="#elements">Elements</a></li> -->
@@ -54,26 +58,41 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Welcome to the NestEgg <br>Drone Share experiment!</h2>
+								<h2 class="major">What's going on here?</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>We’re an experiment discovering how to collectivize ownership in value producing infrastructure, to enable anyone to secure their future with the basic services they need. Achieving this end-vision requires three components: <br> <br>
+								<p>NestEgg is exploring how to collectivize ownership in value producing infrastructure, to enable anyone to secure their future with the basic services they need. Achieving this end-vision requires three components: <br> <br>
 								<span class="icon fa-battery-4"></span>  Crowdfunding an asset into existence <br>
 								<span class="icon fa-users"></span>  Collective Ownership <br>
 								<span class="icon fa-share-square-o"></span>  Distributing the utility created by the asset</p>
-								<p>This Drone Share experiment is designed to explore these first two components by crowdfunding a fleet of drones to be shared amongst a small group of participants. Through this small sandbox, NestEgg will be able to better understand the complexities behind our product and iterate towards a better user experience. We will host this sandbox within the <a href="https://goo.gl/maps/BtrXyrj5gMm">Brightlands Smart Services Campus</a>, and with your help, by the end of this Drone Share, we hope to understand better how to: <br>
-								<ul>
-								<li>help future infrastructure providers manage a group of shareholders (instead of customers)</li>
-								<li>and develop strategies that maximize the potential of crowdfunding and incentivizing community participation in the infrastructure they share.</li></ul></p>
+								<p>This Drone Share experiment is designed to explore these components by crowdfunding a fleet of drones to be shared amongst a small group of participants. Through this small sandbox, NestEgg will be able to better understand the complexities behind our product and iterate towards a better user experience.<br>
+								<h3>Phase 1: Signup and Crowdfund</h3>
+								<p>Participants start the experiment by purchasing ownership in the fleet of drones. This is accomplished by users signing up for the experiment and depositing ETH into the crowdfund address, which will trigger NestEgg to send tokens to their wallet.</p>
+
+								<h3>Phase 2: Shared Ownership</h3>
+								<p>During the experiment, both shareholders and non-shareholders will be able to rent drones. Shareholders get 1st priority for reservations and receive free rental days in proportion to their ownership. Non-shareholders will pay a standard rental fee. NestEgg collects this fee and sends the profit to shareholders in proportion to their ownership. Thus, if a non-shareholder pays €10 to rent a drone, a shareholder with 10% of the fleet would receive €1.</p>
+
+								<h3>Phase 3: Closing Auction</h3>
+								<p>This DroneShare is an experiment, and as such requires an end (as NestEgg cannot indefinitely service the experiment). Thus, at the end NestEgg will host an auction for anyone to purchase the drones. The money raised during these auctions will be distributed to shareholders in proportion to their ownership. Assuming a successful 100% auction, shareholders will receive their initial investment back.</p> 
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Get Started</h2>
+						<!-- Join -->
+							<article id="join">
+								<h2 class="major">Getting Started</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<h3>Prerequisites</h3>
 								<p> If you’d like to join the NestEgg Drone Share experiment, first go through and prepare this list of prerequisites: <br> <br>
 								<span class="icon fa-check-square-o"></span>  ~10€ worth of ETH <br>
-								<span class="icon fa-check-square-o"></span> A funded MyEtherWallet wallet. <a href="#"><i>How do I setup the wallet?</i></a></p>
+								<span class="icon fa-check-square-o"></span> A funded MyEtherWallet wallet. <a href="#"><i>How do I setup the wallet?</i></a> <br>
+								<span class="icon fa-check-square-o"></span> Register for the experiment using the button below.</p>
+								<div align="center">
+								<button id="formButton" align="right" class="button special">Register for the Drone Share</a><br>
+								</div>
+								<div align="center" id="form"><iframe class="airtable-embed" src="https://airtable.com/embed/shrRDxAEVYUlBqmY2?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+								<div align="right"><button id="close" align="right" class="button">Close Window</a></div>
+								</div> <br>
+								<h3>Step 1: Getting EGG Tokens</h3>
+								<p>Once you have your wallet ready, you can deposit ETH into the address 0x90h1b8264vbnjbs85BHJ6 to then receive EGG tokens into the address you sent from.</p>
+
 
 
 							</article>
@@ -85,11 +104,11 @@
 								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
 								<iframe class="airtable-embed" src="https://airtable.com/embed/shrjjB7vh15xFpUSD?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 								<div align="right">
-								<button id="formButton" align="right" class="button special">Make a Reservation</a> <br>
+								<button id="formButton2" align="right" class="button special">Make a Reservation</a> <br>
 								</div>
-								<div align="center" id="form"><iframe class="airtable-embed" src="https://airtable.com/embed/shrI3Rc3gyyutBcZp?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-								<div align="right"><button id="close" align="right" class="button">Close Window</a></div>
-
+								<div align="center" id="form2">
+								<iframe class="airtable-embed" src="https://airtable.com/embed/shrI3Rc3gyyutBcZp?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+								<div align="right"><button id="close2" align="right" class="button">Close Window</button></div>
 								</div>
 								<br><br>
 								<p>*<i>There is a maximum of 5 drones to rent each day. If there are 5 reservations for a day, then that day is full</i></p>
@@ -114,14 +133,10 @@
 						<!-- SOCIAL -->
 						<article id="social">
 							<h2 class="major">Share your Experiences!</h2>
-							<p> Join others who are also owners in your fleet of drones by sharing your experiences together! Post pictures and videos of you using your drone rental and use #droneshare to appear in this list.</p>
+							<p> Join others who are also owners in your fleet of drones by sharing your experiences together! Post pictures and videos of you using your drone rental and use #droneshare to appear in this list. Let's go!</p>
 							<div align="center">
                                <a class="twitter-timeline"  href="https://twitter.com/hashtag/droneshare" data-widget-id="908292289373642754">#droneshare Tweets</a>
 					           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-          
-          
-          
           					</div>
 
 						</article>
@@ -178,14 +193,13 @@
 									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
 									<h4>Preformatted</h4>
 									<pre><code>i = 0;
+									while (!deck.isInOrder()) {
+									    print 'Iteration ' + i;
+									    deck.shuffle();
+									    i++;
+									}
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</section>
 
 								<section>
@@ -430,6 +444,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						$("#form").hide();
 						$("#formButton").show();
 					});
+
+					$("#formButton2").click(function() {
+						$("#formButton2").hide();
+						$("#form2").show();
+					});
+
+					$("#close2").click(function() {
+						$("#form2").hide();
+						$("#formButton2").show();
+					});
+
 				});
 			</script>
 
