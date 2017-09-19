@@ -21,6 +21,14 @@
 			#form2 {
 			display:none;
 			};
+
+			#form3 {
+			display:none;
+			};
+
+			#form4 {
+			display:none;
+			};
 		</style>
 	</head>
 	<body>
@@ -108,8 +116,8 @@
 								<button id="formButton2" align="right" class="button special">Make a Reservation</a> <br>
 								</div>
 								<div align="center" id="form2">
-								<iframe class="airtable-embed" src="https://airtable.com/embed/shrI3Rc3gyyutBcZp?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-								<div align="right"><button id="close2" align="right" class="button">Close Window</button></div>
+									<iframe class="airtable-embed" src="https://airtable.com/embed/shrI3Rc3gyyutBcZp?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+									<div align="right"><button id="close2" align="right" class="button">Close Window</button></div>
 								</div>
 								<br><br>
 								<p>*<i>There is a maximum of 5 drones to rent each day. If there are 5 reservations for a day, then that day is full</i></p>
@@ -138,20 +146,22 @@
 							
 							
 							<div align="center">
-								<button id="formButton" align="right" class="button special">First Feedback: After 1st Deposit </a><br>
+								<button id="formButton3" align="right" class="button special">First Feedback: After 1st Deposit </a><br>
 								</div>
 
-								<div align="center" id="form"><iframe class="airtable-embed" src="https://airtable.com/embed/shrOnT3rCP9xDpL3f?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-								<div align="right"><button id="close" align="right" class="button">Close Window</a></div>
-								</div> <br>
+								<div id="form3" align="center">
+									<iframe class="airtable-embed" src="https://airtable.com/embed/shrOnT3rCP9xDpL3f?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+									<div align="right"><button id="close3" align="right" class="button">Close Window</a></div>
+								</div><br>
 							
 							<div align="center">
-								<button id="formButton" align="right" class="button special"> Second feedback: The NestEgg Experience </a><br>
+								<button id="formButton4" align="right" class="button special"> Second feedback: The NestEgg Experience </a><br>
 								</div>
 
-								<div align="center" id="form"> <iframe class="airtable-embed" src="https://airtable.com/embed/shrAHrpAJet8QH0Ri?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-								<div align="right"><button id="close" align="right" class="button">Close Window</a></div>
-								</div> <br>
+								<div id="form4" lign="center"> 
+									<iframe class="airtable-embed" src="https://airtable.com/embed/shrAHrpAJet8QH0Ri?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+									<div align="right"><button id="close4" align="right" class="button">Close Window</a></div>
+								</div><br>
 						
 
 						</article>
@@ -481,6 +491,26 @@
 					$("#close2").click(function() {
 						$("#form2").hide();
 						$("#formButton2").show();
+					});
+
+					$("#formButton3").click(function() {
+						$("#formButton3").hide();
+						$("#form3").show();
+					});
+
+					$("#close3").click(function() {
+						$("#form3").hide();
+						$("#formButton3").show();
+					});
+
+					$("#formButton4").click(function() {
+						$("#formButton4").hide();
+						$("#form4").show();
+					});
+
+					$("#close4").click(function() {
+						$("#form4").hide();
+						$("#formButton4").show();
 					});
 
 				});
