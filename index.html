@@ -57,7 +57,7 @@
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#join">Join</a></li>
 								<li><a href="#reserve">Reserve</a></li>
-								<li><a href="#rules">Rules</a></li>
+								<li><a href="#auction">Auction</a></li>
 								<!-- <li><a href="#feedback">Feedback</a></li> -->
 								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
@@ -108,11 +108,9 @@
 
 
 								<div align="center">
-								<button id="formButton" align="right" class="button special">Register for the Drone Share</a><br>
+								<button align="right" class="button special">Registration is Closed</a><br>
 								</div>
-								<div align="center" id="form"><iframe class="airtable-embed" src="https://airtable.com/embed/shrRDxAEVYUlBqmY2?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-								<div align="right"><button id="close" align="right" class="button">Close Window</a></div>
-								</div> <br>
+								<br>
 						
 								<span class="icon fa-check-square-o"></span>  Step 3: Buy <a href="https://medium.com/nestegg/nestegg-guide-how-do-i-buy-ether-24e4e8a65fa6"><i> NestEgg tokens</i></a> 
 								<span class="image main"><img src="images/token.png" alt="" /></span><br>
@@ -125,12 +123,9 @@
 								<h2 class="major">Reserve to use your Drone</h2>
 								<iframe class="airtable-embed" src="https://airtable.com/embed/shrjjB7vh15xFpUSD?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 								<div align="right">
-								<button id="formButton2" align="right" class="button special">Make a Reservation</a> <br>
+								<button align="right" class="button special">Reservation Closed</a> <br>
 								</div>
-								<div align="center" id="form2">
-									<iframe class="airtable-embed" src="https://airtable.com/embed/shrI3Rc3gyyutBcZp?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
-									<div align="right"><button id="close2" align="right" class="button">Close Window</button></div>
-								</div>
+							
 								<hr>
 								<p> <h3> Read this is you're an owner</p> </h3>
 								<p>Once you make your reservation, you can send your DAY tokens to the address <code>0x70E9c9F94850a875C82c2B75b9EE01fC994f5cc6</code>. 
@@ -145,8 +140,24 @@
 								<p>First time using a drone? <a href="https://youtu.be/_jGuVDFjFcc">Watch our video tutorial before getting started.</a></p>
 							</article>
 
+						<!-- AUCTION -->
+						<article id="auction">
+							<h2 class="major">Auction Time!</h2>
+							<p>NestEgg has planned an auction in order to sell off the drones bought for DroneShare. The purpose of this auction is to close the experiment by selling off the fractional pieces of ownership to single owners who'd purchase all 100% of each drone. This means that those with OWN tokens will receieve a proportion of the revenue raised in proportion to their ownership.</p> <br>
+							<h3>Auction Closes: Friday 17 November, 2017</h3>
+							<center><div id="clock"></div></center><br>
+							<h3>Wish to buy the Drone?</h3>
+							<iframe class="airtable-embed" src="https://airtable.com/embed/shrTJ8pFr59Ls2u5v?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
+						</article>
+
+
+
+
+
 						<!-- RULES -->
-						<article id="rules">
+						<!-- <article id="rules">
 							<h2 class="major">Rules of Game</h2>
 							<p>NestEgg designed this DroneShare experiment to figure out pieces of the puzzle of the future product. This specific experiment is to test out the logistics for managing collective ownership. Here’s the ‘rules of the game’.</p>
 							<h3> Sharing ownership = Shared responsibility </h3>
@@ -158,9 +169,9 @@
 							<h3> Revenue Distribution </h3>
 							<p> Non-shareholders will pay a standard rental fee for the drone. NestEgg collects this fee and saves it for possible repairs/replacements and if not used, sends the profit to the shareholders. </p> 
 
-						</article>
+						</article> -->
 
-						<!-- RULES -->
+						<!-- DAY -->
 						<article id="day">
 							<h2 class="major">Using your DAY Token</h2>
 							<h3>Reserving with your DAY token.</h3>
@@ -511,6 +522,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.countdown.js"></script>
 			<script>
 				$(document).ready(function() {
 					$("#formButton").click(function() {
@@ -553,6 +565,15 @@
 						$("#formButton4").show();
 					});
 
+				});
+
+				$('#clock').countdown('2017/11/17').on('update.countdown', function(event) {
+				  var $this = $(this).html(event.strftime(''
+				    // + '<span>%-w</span> week%!w '
+				    + '<span>%-d</span> day%!d '
+				    + '<span>%H</span> hr '
+				    + '<span>%M</span> min '
+				    + '<span>%S</span> sec'));
 				});
 			</script>
 
